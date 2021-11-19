@@ -1,24 +1,25 @@
 import React from "react";
-import face01 from "../images/face01.jpg";
 
-function Profile() {
+function Profile({ src, name, msg, num, date }) {
   return (
     <div className="the-profiles flex justify-between py-3">
       <div className="flex items-center">
         <div className="w-14">
-          <img src={face01} alt="first face" className="rounded-full w-9 h-9" />
+          <img
+            src={src}
+            alt="first face"
+            className="rounded-full w-10 h-10 object-cover"
+          />
         </div>
-        <div className="px-2">
-          <p className="text-base text-blue-600">Lina Ray</p>
-          <p className="text-xs text-gray-500">
-            Then ok, let's have a meeting with Client Tommorow
-          </p>
+        <div className="w-40">
+          <p className="text-base text-blue-600">{name}</p>
+          <p className="text-xs text-gray-500">{msg}</p>
         </div>
       </div>
       <div className="num text-center w-20">
-        <span className="text-xs text-gray-500">10:34 AM</span>
+        <span className="text-xs text-gray-500">{date}</span>
         <div className="bg-blue-700 rounded-full w-1/4 text-white text-xs m-auto">
-          <span className="">1</span>
+          <span className="">{num}</span>
         </div>
       </div>
     </div>
