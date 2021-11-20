@@ -2,7 +2,7 @@ import React from "react";
 
 function Profile({ src, name, msg, num, date }) {
   return (
-    <div className="the-profiles flex justify-between py-3">
+    <div className="the-profiles flex justify-between py-3  px-4 cursor-pointer hover:bg-blue-100">
       <div className="flex items-center">
         <div className="w-14">
           <img

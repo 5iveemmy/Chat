@@ -1,5 +1,5 @@
 import React from "react";
-import { BiPencil, BsSearch } from "react-icons/all";
+import { BiPencil } from "react-icons/all";
 import face01 from "../images/face01.jpg";
 import face02 from "../images/face02.jpg";
 import face03 from "../images/face03.jpg";
@@ -7,13 +7,15 @@ import face04 from "../images/face04.jpg";
 import face05 from "../images/face05.jpg";
 import face06 from "../images/face06.jpg";
 import face07 from "../images/face07.jpg";
+import face08 from "../images/img.jpg";
 import Profile from "./Profile";
+import Search from "./Search";
 
 function Platform() {
   return (
-    <div className="bg-gray-100 w-1/4 h-full">
-      <div className="py-6 px-4">
-        <div className="flex items-center justify-between">
+    <div className="bg-gray-100 w-1/4 h-full overflow-y-scroll">
+      <div className="py-7 ">
+        <div className="flex items-center justify-between  px-4">
           <div className="flex items-center">
             <div className="w-12">
               <img
@@ -31,18 +33,10 @@ function Platform() {
             <BiPencil />
           </div>
         </div>
-        <div className="for-search relative w-65 pb-4 pt-5">
-          {" "}
-          <BsSearch className="absolute bottom-6 left-3.5 text-gray-400 text-xs" />
-          <input
-            type="text"
-            className="py-1 px-8 rounded-full text-base w-full"
-            placeholder="Search Friends"
-          />
-        </div>
+        <Search />
         <Profile
           name="Lina Ray"
-          src={face02}
+          src={face03}
           msg="Then ok, let's have a meeting with Client Tommorow"
           date="10:34 AM"
           num="1"
@@ -81,6 +75,20 @@ function Platform() {
           msg="First of all meet with the company CEO  and BOA"
           date="07:12 AM"
           num="1"
+        />
+        <Profile
+          name="Jane Doe"
+          src={face08}
+          msg="Why are you not picking your calls?"
+          date="09:27 PM"
+          num="2"
+        />
+        <Profile
+          name="Jane Doe"
+          src={face08}
+          msg="Why are you not picking your calls?"
+          date="09:27 PM"
+          num="2"
         />
       </div>
     </div>
