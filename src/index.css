@@ -3,3 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.socio {
+  @apply bg-blue-100 w-20 h-20  rounded-full relative;
+}
+
+.socio-icon {
+  @apply text-4xl absolute top-1/4 left-1/4 text-blue-600 cursor-pointer;
+}
+
+.pdf {
+  @apply bg-blue-100 h-20 w-16 flex justify-center items-center;
+}
+
+.pdf-p {
+  @apply text-sm text-blue-500;
+}

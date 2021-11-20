@@ -8,7 +8,7 @@ function Search() {
       <BsSearch className="absolute bottom-6 left-7 text-gray-400 text-xs" />
       <input
         type="text"
-        className="py-1 px-8 rounded-full text-base w-full outline-none"
+        className="py-1 px-8 rounded-full text-base w-full outline-none text-gray-400"
         placeholder="Search Friends"
       />
     </div>
