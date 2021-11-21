@@ -11,20 +11,20 @@ import "../index.css";
 
 function ProfileView() {
   return (
-    <div className="bg-gray-100 w-1/4">
+    <div className="bg-gray-100  w-1/4">
       <Search />
-      <div className=" flex justify-center pt-3">
+      <div className=" flex justify-center pt-2">
         <img
           src={face03}
           alt="Lina Ray"
           className="rounded-full w-40 h-40 object-cover"
         />
       </div>
-      <div className="text-center pt-3 pb-5">
+      <div className="text-center pt-2 pb-3">
         <p className="text-2xl">Dianne Vanhorn</p>
         <p className="text-lg">Junior Developer</p>
       </div>
-      <div className="flex justify-around pb-8">
+      <div className="flex justify-around pb-5">
         <div>
           <div className="socio">
             <BsFillChatFill className="socio-icon" />
@@ -39,15 +39,15 @@ function ProfileView() {
         </div>
       </div>
       <div className="pl-5 pr-4">
-        <div className="flex items-center pb-4">
-          <BsPerson /> <p className="pl-2">View Friends</p>
+        <div className="flex items-center pb-3 text-gray-500">
+          <BsPerson /> <p className="pl-2 ">View Friends</p>
         </div>
-        <div className="flex items-center pb-4">
+        <div className="flex items-center pb-4 text-gray-500">
           <BsHeart /> <p className="pl-2">Add to Favorite</p>
         </div>
         <div>
           <p>Attachments</p>
-          <div className="flex justify-between pt-4 pb-4">
+          <div className="flex justify-between pt-3 pb-3">
             <div className="pdf">
               <p className="pdf-p">PDF</p>
             </div>

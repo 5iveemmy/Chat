@@ -13,7 +13,7 @@ import Search from "./Search";
 
 function Platform() {
   return (
-    <div className="bg-gray-100 w-1/4 overflow-y-scroll">
+    <div className="bg-gray-100 w-1/4 h-screen overflow-y-scroll">
       <div className="py-7 ">
         <div className="flex items-center justify-between  px-4">
           <div className="flex items-center">
