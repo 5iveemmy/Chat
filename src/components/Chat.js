@@ -23,7 +23,7 @@ function Chat() {
               </div>
             </div>
           </div>
-          <div className="flex justify-between w-1/6 text-gray-400">
+          <div className="flex justify-between w-1/6 text-xl text-gray-400">
             <div>
               <BsBell />
             </div>
@@ -34,6 +34,12 @@ function Chat() {
               <BsHeart />
             </div>
           </div>
+        </div>
+        <div className="line text-center">
+          <p className="line-para text-gray-300">Tomorrow</p>
+        </div>
+        <div className="for-chat">
+          <div></div>
         </div>
       </div>
     </div>

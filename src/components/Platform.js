@@ -11,6 +11,58 @@ import face08 from "../images/img.jpg";
 import Profile from "./Profile";
 import Search from "./Search";
 
+const users = [
+  {
+    name: "Lina Ray",
+    src: face03,
+    message: "Then ok, let's have a meeting with Client Tommorow",
+    date: "10:34 AM",
+    num: "1",
+  },
+  {
+    name: "Brad frost",
+    src: face05,
+    message: "Nice to meet you!",
+    date: "10:29 AM",
+    num: "1",
+  },
+  {
+    name: "Paul Irish",
+    src: face07,
+    message: "Thats Great, then start working from tomorrow",
+    date: "09:34 AM",
+    num: "1",
+  },
+  {
+    name: "Jessica Glloy",
+    src: face02,
+    message: "That Sounds Good",
+    date: "08:30 AM",
+    num: "1",
+  },
+  {
+    name: "John Doe",
+    src: face04,
+    message: "Hi sir, The second component will be completed today",
+    date: "08:54 AM",
+    num: "1",
+  },
+  {
+    name: "Eric Peterson",
+    src: face06,
+    message: "First of all meet with the company CEO  and BOA",
+    date: "07:12 AM",
+    num: "1",
+  },
+  {
+    name: "Jane Doe",
+    src: face08,
+    message: "Why are you not picking your calls?",
+    date: "09:27 PM",
+    num: "2",
+  },
+];
+
 function Platform() {
   return (
     <div className="bg-gray-100 w-1/4 h-screen overflow-y-scroll">
@@ -34,62 +86,9 @@ function Platform() {
           </div>
         </div>
         <Search />
-        <Profile
-          name="Lina Ray"
-          src={face03}
-          msg="Then ok, let's have a meeting with Client Tommorow"
-          date="10:34 AM"
-          num="1"
-        />
-        <Profile
-          name="Brad frost"
-          src={face05}
-          msg="Nice to meet you!"
-          date="10:29 AM"
-          num="1"
-        />
-        <Profile
-          name="Paul Irish"
-          src={face07}
-          msg="Thats Great, then start working from tomorrow"
-          date="09:34 AM"
-          num="1"
-        />
-        <Profile
-          name="Jessica Glloy"
-          src={face02}
-          msg="That Sounds Good"
-          date="08:30 AM"
-          num="1"
-        />
-        <Profile
-          name="John Doe"
-          src={face04}
-          msg="Hi sir, The second component will be completed today"
-          date="08:54 AM"
-          num="1"
-        />
-        <Profile
-          name="Eric Peterson"
-          src={face06}
-          msg="First of all meet with the company CEO  and BOA"
-          date="07:12 AM"
-          num="1"
-        />
-        <Profile
-          name="Jane Doe"
-          src={face08}
-          msg="Why are you not picking your calls?"
-          date="09:27 PM"
-          num="2"
-        />
-        <Profile
-          name="Jane Doe"
-          src={face08}
-          msg="Why are you not picking your calls?"
-          date="09:27 PM"
-          num="2"
-        />
+        {users.map(({ name, src, message, date, num }) => (
+          <Profile name={name} src={src} msg={message} date={date} num={num} />
+        ))}
       </div>
     </div>
   );

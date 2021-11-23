@@ -1,0 +1,27 @@
+/* .line p::before,
+.line p::after {
+  display: inline-block;
+  content: "";
+  border-top: 0.15px solid rgb(232, 232, 233);
+  width: 39%;
+  margin: 0 1rem;
+  transform: translateY(-0.3rem);
+} */
+
+.line-para {
+  display: flex;
+  flex-direction: row;
+}
+.line-para::before,
+.line-para::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 0.15px solid rgb(232, 232, 233);
+  margin: auto;
+}
+.line-para::before {
+  margin-right: 10px;
+}
+.line-para::after {
+  margin-left: 10px;
+}
